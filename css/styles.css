@@ -25,9 +25,46 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--main-title-color);
 }
 /* описание хедера */
+.header-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+.header-span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--selection-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--selection-title-color);
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--selection-title-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--selection-title-color);
+}
 .header {
   background-color: #ffffff;
 }
@@ -37,7 +74,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .header-contacts {
@@ -46,7 +83,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--secondary-title-color);
 }
 
 /* герой */
@@ -72,8 +109,19 @@ body {
   height: 50px;
   left: 700px;
   top: 430px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
 
-  background: #2196f3;
+  /* display: flex;
+align-items: center;
+text-align: center; */
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  background: var(--selection-title-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -87,16 +135,38 @@ body {
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--secondary-title-color);
 }
 /* чем мы занимаемся */
 .affairs {
-  background-color: #e5e5e5;
+  background-color: var(--secondary-section-color);
 }
 
 /* наша команда */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--section-color);
+}
+.team-caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-color);
+}
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-title-color);
 }
 
 /* футер */
@@ -104,16 +174,95 @@ body {
 .footer {
   background-color: #2f303a;
 }
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
 
-/* портфолио */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer-span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  color: var(--selection-title-color);
+}
+.address-street {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.address-mail,
+.address-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ПОРТФОЛИО */
 .button-portfilio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-color);
   /* position: absolute; */
   width: 145px;
   height: 38px;
   left: 712px;
   top: 174px;
 
-  background: #f5f4fa;
+  background: var(--section-color);
   border-radius: 4px;
   border: none;
+}
+.topic-leader {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--main-title-color);
+}
+
+.topic-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-title-color);
+}
+.button-portfilio:hover,
+.button-portfilio:focus {
+  background-color: var(--selection-title-color);
+  color: #ffffff;
 }
